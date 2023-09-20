@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    #Accion para ALUMNO
+    <record id="action_alumno" model="ir.actions.act_window">
+            <field name="name">Alumno</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">modulo_alumnos.alumno</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                    <p class="o_view_nocontent_smiling_face">
+                            Creat tu perfil Alumno
+                    </p>
+            </field>
+    </record>
+
+    #Accion para INSCRIPCION
+    <record id="action_inscripcion" model="ir.actions.act_window">
+            <field name="name">Inscripcion</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">modulo_alumnos.inscripcion</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                    <p class="o_view_nocontent_smiling_face">
+                            Inscribete a un programa
+                    </p>
+            </field>
+    </record>
+
+    #Accion para PROGRAMA
+    <record id="action_programa" model="ir.actions.act_window">
+            <field name="name">Programa</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">modulo_alumnos.programa</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+            <field name="help" type="html">
+                    <p class="o_view_nocontent_smiling_face">
+                            Observa programa
+                    </p>
+            </field>
+    </record>
+
+    #Menu Principal
+    <menuitem id="menu_colegio"
+        name="Colegio"
+        sequence="0"/>
+
+    #Submenus
+    <menuitem id="submenu_alumno"
+        name="Alumnos"
+        parent = "menu_colegio"
+        sequence="1"
+        action="action_alumno"/>
+
+    <menuitem id="submenu_inscripcion"
+        name="Inscripcion"
+        parent = "menu_colegio"
+        sequence="2"
+        action="action_inscripcion"/>
+
+    <menuitem id="submenu_programa"
+        name="Programas"
+        parent = "menu_colegio"
+        sequence="3"
+        action="action_programa"/>
+</odoo>

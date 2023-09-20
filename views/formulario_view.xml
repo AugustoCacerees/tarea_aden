@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    #Vista de Arbol
+    <record id="view_alumno_tree" model="ir.ui.view">
+            <field name="name">modulo_alumnos.alumno.tree</field>
+            <field name="model">modulo_alumnos.alumno</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre" string="Nombre"/>
+                    <field name="apellido" string="Apellido"/>
+                    <field name="email" string="Email"/>
+                    <field name="telefono" string="Telefono"/>
+                </tree>
+            </field>
+    </record>
+
+    #Vista de Formulario
+    <record id="view_alumno_form" model="ir.ui.view">
+            <field name="name">modulo_alumnos.alumno.form</field>
+            <field name="model">modulo_alumnos.alumno</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="nombre"/>
+                                <field name="apellido"/>
+                                <field name="fecha_nacimiento"/>
+                                <field name="direccion"/>
+                            </group>
+                            <group>
+                                <field name="pais"/>
+                                <field name="legajo"/>
+                                <field name="email"/>
+                                <field name="telefono"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+    </record>
+</odoo>
