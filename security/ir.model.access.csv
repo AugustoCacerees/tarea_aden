@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_modulo_alumnos.alumno,access_modulo_alumnos_alumno,modulo_alumnos.model_modulo_alumnos_alumno,base.group_user,1,1,1,1
+access_modulo_alumnos.inscripcion,access_modulo_alumnos_inscripcion,modulo_alumnos.model_modulo_alumnos_inscripcion,base.group_user,1,1,1,1
+access_modulo_alumnos.programa,access_modulo_alumnos_programa,modulo_alumnos.model_modulo_alumnos_programa,base.group_user,1,1,1,1
